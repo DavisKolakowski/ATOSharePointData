@@ -7,5 +7,4 @@ namespace ServicePortfolio.Shared.Objects.ATOServicePortfolio
         [JsonProperty("siteId")]
         public string SiteIdentifier { get; set; } = String.Empty;
     }
-
 }

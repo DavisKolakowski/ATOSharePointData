@@ -12,11 +12,11 @@ namespace ServicePortfolio.Shared.Services
 {
     public class ATOServicePortfolioDeserializeService
     {
-        public static JSONMapperRootObj DeserializeJson()
+        public static JSONMapperRootATOServicePortfolioObj DeserializeJson()
         {
             var jsonString = File.ReadAllText(@"C:\Users\dkolak713\repos\ATOSharePointData\ServicePortfolio.Shared\Data\ATOServicePortfolio.json");
 
-            var rootObj = JsonConvert.DeserializeObject<JSONMapperRootObj>(jsonString);
+            var rootObj = JsonConvert.DeserializeObject<JSONMapperRootATOServicePortfolioObj>(jsonString);
 
             return rootObj;
         }
